@@ -1,6 +1,7 @@
 package com.luyanjia.myapp.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -11,7 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HealthController {
     @GetMapping("/health")
-    public String test() {
+    public String health() {
         return "health";
+    }
+
+    @GetMapping("/str")
+    public String returnStr(@RequestParam(value = "str") String s) {
+        return s;
     }
 }
