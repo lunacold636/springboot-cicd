@@ -2,7 +2,6 @@ FROM crpi-q67ejfvhi9pf4o8n.cn-hangzhou.personal.cr.aliyuncs.com/my_registry1/ope
 USER root
 
 LABEL maintainer="yanjia.lu <lunacold636@gmail.com>"
-
 LABEL version="1.0.0"
 
 ENV DOCKER_DIR /luyanjia/jar_8085
@@ -45,4 +44,4 @@ ${JVM_ARGS} \
 -Dserver.servlet.contextPath=${CONTEXT_PATH} \
 -jar /root/${JAR_NAME}
 
-RUN echo Asia/Shanghai > /etc/timezone
+# RUN echo Asia/Shanghai > /etc/timezone

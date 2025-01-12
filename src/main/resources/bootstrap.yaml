@@ -1,0 +1,10 @@
+#spring:
+#  cloud:
+#    nacos:
+#      config:
+#        server-addr: http://127.0.0.1:8848
+#        namespace: b5b65e40-aced-4d0f-8150-b9d0b6bd742e
+#        file-extension: yml
+#        extension-configs:
+#          - dataId: application.yaml
+#            group: DEFAULT_GROUP
